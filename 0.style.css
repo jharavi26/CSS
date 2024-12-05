@@ -87,4 +87,76 @@ p::first-line {
 }
 
 
+/* Combinators */
+
+/* Descendant combinator - Styles all elements inside .container */
+.container p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Child combinator - Styles only direct children of .container */
+.container > h2 {
+  color: #0056b3;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Adjacent sibling combinator - Styles the paragraph after a heading */
+h2 + p {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* General sibling combinator - Styles all <p> elements after <h1> */
+h2 ~ p {
+  margin-left: 20px;
+}
+
+/* Pseudo-classes */
+
+/* Hover effect */
+p.info:hover {
+  color: #ff5722;
+  background-color: #f9f9f9;
+  transition: 0.3s;
+}
+
+/* nth-child selector for list items */
+.list li:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.list li:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+/* Pseudo-elements */
+
+/* ::before - Adds content before an element */
+h2::before {
+  content: "🌟 ";
+  color: gold;
+}
+
+/* ::after - Adds content after an element */
+h2::after {
+  content: " 🌟";
+  color: gold;
+}
+
+/* ::first-letter - Styles the first letter of a paragraph */
+p.intro::first-letter {
+  font-size: 2em;
+  color: #ff9800;
+  font-weight: bold;
+}
+
+/* ::first-line - Styles the first line of a paragraph */
+p::first-line {
+  font-style: italic;
+}
+
+
+
 
