@@ -1,0 +1,90 @@
+/* CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It allows developers to control the look and feel of a website, including layout, colors, fonts, spacing, and responsiveness. */
+
+/* Basic Syntax 
+selector {
+  property: value;
+} */
+
+/* Inline style <p style="color: green;">Hello, world!</p>
+
+Internal Style <style>
+body {
+  background-color: lightgray;
+}
+</style>
+
+External Style :  <link rel="stylesheet" href="styles.css"> */
+
+/* Selectors define which HTML elements will be styled. */
+
+/* A pseudo-class defines a special state of an element. It styles an element based on user interaction, element position, or other conditions not directly accessible through the DOM.
+
+A pseudo-element allows you to style specific parts of an element, such as the first letter, first line, or insert content before/after an element. */
+
+
+/* 1. Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Type Selector */
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+/* 3. Class Selector */
+.description {
+  font-size: 18px;
+  color: gray;
+}
+
+/* 4. ID Selector */
+#container {
+  border: 2px solid black;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* 5. Group Selector */
+h1, p {
+  font-family: Arial, sans-serif;
+}
+
+/* 6. Descendant Selector */
+div p {
+  margin-bottom: 10px;
+}
+
+/* 7. Child Selector */
+ul > li {
+  list-style-type: square;
+  margin: 5px 0;
+}
+
+/* 8. Adjacent Sibling Selector */
+h1 + p {
+  font-weight: bold;
+  color: darkgreen;
+}
+
+/* 9. Attribute Selector */
+a[target="_blank"] {
+  color: red;
+  text-decoration: none;
+}
+
+/* 10. Pseudo-Class Selector */
+li:hover {
+  color: orange;
+}
+
+/* 11. Pseudo-Element Selector */
+p::first-line {
+  font-weight: bold;
+  color: rgb(1, 17, 17);
+}
+
+
+
