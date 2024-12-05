@@ -2,6 +2,12 @@
 
 <!-- Attributes are space-separated names and name/value pairs appearing in the opening tag, providing information about and functionality for the element. -->
 
+<!-- lists are used to group related items together, and they are categorized into three main types: unordered lists, ordered lists, and description lists. -->
+
+<!-- In HTML, navigation refers to the structure and elements used to guide users through different sections of a website. HTML provides the <nav> element and various supporting elements to create navigation menus effectively. -->
+
+<!-- In HTML, tables are used to display data in rows and columns. They are created using the <table> element and several supporting tags to define its structure. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +23,49 @@
     <br>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Learn Javascript from MDN</a>
     <p>Here are some tips:</p>
-    <ul>
-        <li>Learn the basics</li>
-        <li>Practice daily</li>
-        <li>Build projects</li>
+    <ul style="list-style-type: square; margin-left: 20px;">
+      <li style="color: red;">HTML</li>
+      <li style="font-weight: bold;">CSS</li>
+      <li style="font-style: italic;">JavaScript</li>
     </ul>
+
+    <ol type="I" start="3" reversed  style="color: blue;">
+      <li>Start with HTML</li>
+      <li>Learn CSS</li>
+      <li>Practice JavaScript</li>
+    </ol>
+
+    <table border="1">
+      <caption>Student Information</caption>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Details</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>New York</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Jane</td>
+        <td>30</td>
+        <td>Los Angeles</td>
+      </tr>
+      <tr>
+        <td>32</td>
+        <td>San Francisco</td>
+      </tr>
+    </table>
+    
+    
+
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language, used to structure web pages.</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets, used for styling web pages.</dd>
+    </dl>
+
      <!-- Basic link -->
      <a href="https://www.google.com">Visit Google</a><br>
 
@@ -36,5 +80,24 @@
  
      <!-- Secure link with rel attribute -->
      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Secure Google Link</a>
+
+     <nav>
+      <ul style="display: flex; list-style: none; padding: 0;">
+        <li style="margin-right: 20px;"><a href="index.html">Home</a></li>
+        <li style="margin-right: 20px;"><a href="about.html">About Us</a></li>
+        <li style="margin-right: 20px;"><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+    
+
+
 </body>
 </html>
