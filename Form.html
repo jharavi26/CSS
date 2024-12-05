@@ -1,0 +1,65 @@
+<!-- In HTML, forms are used to collect user input, such as text, numbers, selections, and files, and send that data to a server for processing. -->
+
+<!-- Form validation in HTML
+HTML5 provides several ways to validate form data:
+1.Required Fields: Using the required attribute.
+2.Pattern Matching: Using the pattern attribute with a regular expression.
+3.Minimum/Maximum Length: Using minlength and maxlength attributes.
+4.Email Validation: Using type="email" for email format validation. -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+    <h2>Sample HTML Form</h2>
+
+    <form action="/submit" method="POST">
+        <!-- Text input field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email input field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Password input field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Radio buttons -->
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br><br>
+
+        <!-- Drop-down selection -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <!-- Text area -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message..."></textarea><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form> 
+ </body>
+ </html>
