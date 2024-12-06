@@ -1,0 +1,35 @@
+.container {
+  background-color: lightgray;
+  width: 500px;
+  height: 300px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box {
+  width: 200px; /* Content width */
+  height: 150px; /* Content height */
+  padding: 20px; /* Space between content and border */
+  border: 10px solid rgb(16, 17, 16); /* Border thickness and color */
+  margin: 30px; /* Space outside the border */
+  background-color: aqua; /* Content background color */
+  box-sizing: border-box; /* Includes padding and border in the width/height */
+}
+
+.content-box {
+  box-sizing: content-box;
+  background-color: lightblue;
+  border-color: darkblue;
+}
+
+.info {
+  position: absolute;
+  bottom: -40px;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  color: black;
+}
