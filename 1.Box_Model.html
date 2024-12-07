@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Box Model Example</title>
   <link rel="stylesheet" href="./1.Box.css">
+  <link rel="stylesheet" href="02.Display.css">
+  <link rel="stylesheet" href="03.Position.css">
 </head>
 <body>
  
@@ -17,7 +19,51 @@
 
     <!-- Info text -->
     <div class="info">Margin (Gray Background), Padding (Inside Border)</div>
+    </div>
 
-  </div>
+  <h1>CSS Display Property Demonstration</h1>
+
+  <h2>Block Element</h2>
+  <div class = black">
+  <div class="block">I am a block element. I take up the full width of my container.</div>
+  <div class="block">Another block element. I appear on a new line below.</div>
+
+  <h2>Inline Element</h2>
+  <span class="inline">I am an inline element.</span>
+  <span class="inline">I appear on the same line as the previous inline element.</span>
+
+  <h2>Inline-Block Element</h2>
+  <div class="inline-block">I am an inline-block element.</div>
+  <div class="inline-block">I appear inline but can have width and height.</div>
+
+  <h2>None</h2>
+  <div class="none">You won't see this because I am set to `display: none;`</div>
+</div>
+
+<div class="white">
+<h1>CSS Position Property Demonstration</h1>
+
+<h2>Static Position (Default)</h2>
+<div class="static">I am a static element. I follow the normal document flow.</div>
+
+<h2>Relative Position</h2>
+<div class="relative">I am a relative element. I am offset by 20px from my original position.</div>
+
+<h2>Absolute Position</h2>
+<div class="absolute">I am an absolute element. I am positioned relative to my nearest positioned ancestor or the viewport if none exists.</div>
+
+<h2>Fixed Position</h2>
+<div class="fixed">I am a fixed element. I stay in the same position relative to the viewport when you scroll.</div>
+
+<h2>Sticky Position</h2>
+<div class="sticky-container">
+  <div class="sticky">I am a sticky element. I stick to the top of the container when you scroll.</div>
+  <p>Scroll down inside this container to see the sticky behavior.</p>
+  <p>Sticky positioning is useful for creating sticky headers or navigation bars.</p>
+  <p>Keep scrolling to see how it works!</p>
+  <p>Sticky elements combine characteristics of relative and fixed positioning.</p>
+</div>
+</div>
+
 </body>
 </html>

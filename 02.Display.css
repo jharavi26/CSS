@@ -1,0 +1,27 @@
+.black {
+  padding: 10px;
+  border: 1px solid #000;
+  margin: 10px;
+  background-color: #f0f0f0;
+}
+
+/* Display as block (default for div) */
+.block {
+  display: block;
+}
+
+/* Display as inline */
+.inline {
+  display: inline;
+}
+
+/* Display as inline-block */
+.inline-block {
+  display: inline-block;
+  width: 150px;
+}
+
+/* Hidden element */
+.none {
+  display: none;
+}
