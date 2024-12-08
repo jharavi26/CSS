@@ -41,3 +41,54 @@
 }
 
 
+.Grid-container {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* 2 columns: Sidebar (200px) and Content (flexible width) */
+  grid-template-rows: 100px auto 50px; /* 3 rows: Header, Main, Footer */
+  gap: 10px; /* Spacing between items */
+}
+
+#header {
+  grid-column: 1 / -1; /* Start at the first column and span all columns */
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#content {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+#nav {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+#product {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+#prize {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+#footer {
+  grid-column: 1 / -1; /* Footer spans the full width as well */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+  
+
+
+
+
+
+
