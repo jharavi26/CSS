@@ -43,49 +43,73 @@
 
 .Grid-container {
   display: grid;
-  grid-template-columns: 200px 1fr; /* 2 columns: Sidebar (200px) and Content (flexible width) */
-  grid-template-rows: 100px auto 50px; /* 3 rows: Header, Main, Footer */
+  grid-template-columns: repeat(3, 1fr);        /* 2 columns: Sidebar (200px) and Content (flexible width) */
+  grid-template-rows: 100px 100px 100px 100px;       /* 3 rows: Header, Main, Footer */
   gap: 10px; /* Spacing between items */
+  border: 2px solid burlywood;
 }
 
-#header {
+#header{
   grid-column: 1 / -1; /* Start at the first column and span all columns */
-  background-color: #4caf50;
+  background-color: #6952e9;
   color: white;
   text-align: center;
   padding: 20px;
   font-size: 24px;
   font-weight: bold;
 }
+h2:hover{
+  background-color: mediumseagreen;
+}
 
 #content {
-  background-color: #f0f0f0;
+  background-color: #e58f16;
   padding: 20px;
+  grid-column: 2 / -1;
+  
 }
 
 #nav {
-  background-color: #ddd;
+  background-color: #d718f0;
   padding: 20px;
+  grid-row: 2 / 4;
 }
 
 #product {
-  background-color: #ddd;
+  background-color: #078a72;
   padding: 20px;
 }
 
 #prize {
-  background-color: #ddd;
+  background-color: #40eb0c;
   padding: 20px;
 }
 
 #footer {
   grid-column: 1 / -1; /* Footer spans the full width as well */
-  background-color: #333;
+  background-color: #f50bd1;
   color: white;
   text-align: center;
   padding: 10px;
 }
-  
+
+h2::before {
+  content: "🌟 "; /* Adds a star before the text */
+  color: gold;
+}
+
+h2::after {
+  content: " 🎉";      /* Adds a celebration emoji after the text */
+  color: red;
+}
+
+h2::first-letter {
+  font-size: 2em;
+  color: red;
+  font-weight: bold;
+}
+
+
 
 
 
