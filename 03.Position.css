@@ -2,47 +2,48 @@
   padding: 10px;
   margin: 10px;
   border: 2px solid #000;
-  background-color: #f0f0f0;
+  background-color: #f4cb80;
   color: #333;
+  position: relative; 
 }
 
 
 .static {
-  position: static; /* Default positioning */
+  position: static;
+  background: lightgray;
 }
 
-/* Relative positioning */
 .relative {
   position: relative;
-  top: 20px; /* Moves the element 20px down from its original position */
-  left: 20px; /* Moves the element 20px right from its original position */
-  background-color: #cce7ff;
+  top: 30px;
+  background: lightblue;
 }
 
-/* Absolute positioning */
 .absolute {
   position: absolute;
-  top: 50px; /* Positioned relative to the nearest positioned ancestor */
+  top: 200px;
   left: 50px;
-  background-color: #ffcccc;
+  background: lightgreen;
 }
 
-/* Fixed positioning */
 .fixed {
   position: fixed;
-  top: 10px; /* Positioned relative to the viewport */
-  right: 10px;
-  background-color: #d4f8d4;
+  bottom: 0;
+  width: 100%;
+  background: pink;
 }
 
-/* Sticky positioning */
-.sticky-container {
-  height: 300px; /* Set a height to demonstrate scrolling behavior */
-  overflow-y: auto; /* Allow scrolling */
-  border: 1px dashed #333;
-}
 .sticky {
   position: sticky;
-  top: 0; /* Sticks to the top of the container while scrolling */
-  background-color: #ffe599;
+  top: 10px;
+  background: orange;
+}
+
+.container1 {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.spacer {
+  height: 300px;
 }
