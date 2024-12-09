@@ -1,0 +1,78 @@
+/* Default styles for desktop and large screens */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #ee4a4a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.content {
+  flex: 0 0 70%; /* Take up 70% of the space */
+  background-color: rgb(131, 12, 131);
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  flex: 0 0 25%; /* Take up 25% of the space */
+  background-color: rgb(210, 246, 50);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+      padding: 15px 0;
+  }
+
+  main {
+      flex-direction: column; /* Stack content and sidebar vertically */
+  }
+
+  .content {
+      flex: 1 0 100%; /* Full width for content */
+      margin-right: 0; /* Remove right margin */
+  }
+
+  .sidebar {
+      flex: 1 0 100%; /* Full width for sidebar */
+      margin-top: 20px; /* Add space between content and sidebar */
+  }
+}
+
+/* Media Query for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  header {
+      font-size: 20px;
+      padding: 10px 0;
+  }
+
+  .content h2 {
+      font-size: 18px;
+  }
+
+  .sidebar h3 {
+      font-size: 16px;
+  }
+
+  main {
+      padding: 10px;
+  }
+}
