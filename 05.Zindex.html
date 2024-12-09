@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      body{
+        background-color: rgb(233, 145, 45);
+      }
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            color: white;
+        }
+
+        .box1 {
+            background: red;
+            top: 50px;
+            left: 50px;
+            z-index: -1;
+        }
+
+        .box2 {
+            background: blue;
+            top: 80px;
+            left: 80px;
+            z-index: 2; /* Appears on top of box1 */
+        }
+
+        .box3 {
+            background: green;
+            top: 110px;
+            left: 110px;
+            z-index: 3; /* Appears behind box2 but above default stacking */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+</body>
+</html>

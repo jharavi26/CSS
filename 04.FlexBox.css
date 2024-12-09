@@ -6,8 +6,9 @@
   display: flex;                    /* #Enable Flexbox */
   flex-direction: row;              /* Direction Horizontally*/
   flex-wrap: wrap;              /*Wrap element for groing & shrink*/
-  justify-content: center;      /*Distributes items evenly along the main axis */
-  align-items: center;         /*Aligns items along the cross axis */
+  justify-content: center; 
+  align-items: center;                /*Distributes items evenly along the main axis  */
+           
   gap: 10px;                     /*Adds spacing between items*/
 
   
