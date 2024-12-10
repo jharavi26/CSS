@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transform Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .box:hover {
+      cursor: pointer;
+    }
+
+    /* Transform Examples */
+    .translate {
+      transform: translate(50px, 20px); /* Moves the box */
+    }
+
+    .rotate {
+      transform: rotate(45deg); /* Rotates the box */
+    }
+
+    .scale {
+      transform: scale(1.5); /* Enlarges the box */
+    }
+
+    .skew {
+      transform: skew(20deg, 10deg); /* Skews the box */
+    }
+
+    .translate:hover {
+      transform: translate(0, 0); /* Returns to original position */
+    }
+
+    .rotate:hover {
+      transform: rotate(0deg); /* Returns to original orientation */
+    }
+
+    .scale:hover {
+      transform: scale(1); /* Returns to original size */
+    }
+
+    .skew:hover {
+      transform: skew(0, 0); /* Returns to original shape */
+    }
+
+    .combined {
+      transform: translate(20px, 20px) rotate(30deg) scale(1.2); /* Combines transformations */
+    }
+
+    .combined:hover {
+      transform: translate(0, 0) rotate(0) scale(1); /* Reset */
+    }
+
+    .perspective {
+      transform: perspective(300px) rotateY(45deg); /* Adds depth effect */
+    }
+
+    .perspective:hover {
+      transform: perspective(300px) rotateY(0deg); /* Reset depth */
+    }
+
+    .origin {
+      transform: rotate(45deg);
+      transform-origin: bottom right; /* Rotates around the bottom-right corner */
+    }
+
+    .origin:hover {
+      transform: rotate(0deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box translate">Translate</div>
+  <div class="box rotate">Rotate</div>
+  <div class="box scale">Scale</div>
+  <div class="box skew">Skew</div>
+  <div class="box combined">Combined</div>
+  <div class="box perspective">Perspective</div>
+  <div class="box origin">Transform Origin</div>
+</body>
+</html>
