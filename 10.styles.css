@@ -1,0 +1,50 @@
+/* Declare CSS Variables (Custom Properties) */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-size: 16px;
+  --padding: 20px;
+  --header-height: calc(var(--font-size) * 4); /* Calculate height based on font size */
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size);
+  line-height: 1.5;
+}
+
+/* Header Section */
+.header {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: var(--padding);
+  height: var(--header-height);
+}
+
+/* Main Content */
+.content {
+  padding: calc(var(--padding) * 2); /* Dynamically calculate padding */
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-align: center;
+}
+
+/* Footer Section */
+.footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: var(--padding);
+  font-size: calc(var(--font-size) * 0.8); /* Responsive font size */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  :root {
+    --font-size: 14px; /* Adjust font size for smaller screens */
+    --padding: 15px;
+  }
+}
