@@ -1,0 +1,31 @@
+.container{
+  height: 500px;
+  width: 300px;
+  background-color: aqua;
+  text-align: center;
+  justify-content: center;
+  border : 2px solid black;
+
+    /* Individual animation properties */
+    animation-name : example-animation;            /* Name of the keyframes */
+    animation-duration : 3s;                      /* Duration of animation */
+    animation-timing-function: ease-in-out;      /* Speed curve */
+    animation-delay: 1s;                         /* Delay before animation starts */
+    animation-iteration-count: infinite;         /* Number of repetitions (infinite) */
+    animation-direction: forward;              /* Reverses direction on each iteration */
+}
+
+
+
+@keyframes example-animation {
+  0% {
+    transform: rotate(0);
+    background-color: red;
+  }
+  100% {
+    transform: rotate(360);
+    background-color: green;
+    border-radius: 150px;
+  }
+}
+
