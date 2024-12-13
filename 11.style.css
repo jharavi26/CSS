@@ -1,12 +1,10 @@
 .container{
-  height: 500px;
+  height: 300px;
   width: 300px;
   background-color: aqua;
-  text-align: center;
-  justify-content: center;
   border : 2px solid black;
 
-    /* Individual animation properties */
+  /* Individual animation properties */
     animation-name : example-animation;            /* Name of the keyframes */
     animation-duration : 3s;                      /* Duration of animation */
     animation-timing-function: ease-in-out;      /* Speed curve */
@@ -14,8 +12,6 @@
     animation-iteration-count: infinite;         /* Number of repetitions (infinite) */
     animation-direction: forward;              /* Reverses direction on each iteration */
 }
-
-
 
 @keyframes example-animation {
   0% {
@@ -28,4 +24,54 @@
     border-radius: 150px;
   }
 }
+
+body {
+  background-color: aquamarine;
+
+}
+
+
+.heart {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  animation: move-heart 3s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  left: 50px;
+  top: 0;
+}
+
+@keyframes move-heart {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 
